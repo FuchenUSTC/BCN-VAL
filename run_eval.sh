@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python eval_fea.py --config_file=./config/mlp-anet-infer.yml

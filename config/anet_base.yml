@@ -1,0 +1,22 @@
+dataset:
+  # data
+  dataset_class: video_dataset
+  format: FEATURE
+  list_file: dataset/anet/anet_train_npy.csv
+  root_path: D:\users\v-fulong\data\ActivityNet\train_npy
+  num_classes: 200
+
+  # random augmentation parameters (estimated)
+  rand_augment: False
+  ra_n: 1
+  ra_m: 25
+
+optimizer:
+  # optimization
+  base_learning_rate: 0.04
+  warmup_epoch: 1
+  epochs: 128
+  loss_weight: 4.
+
+network:
+  dropout_ratio: 0.7

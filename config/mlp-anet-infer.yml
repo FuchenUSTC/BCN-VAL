@@ -1,0 +1,21 @@
+base: config/anet_base.yml
+sampler:
+  eval_freq: 1
+  batch_size: 1
+  iter_size: 1
+
+
+data:
+  use_mean_data: False
+  eva_list_file: dataset/anet/anet_val_npy.csv
+  eva_root_path: xxx/xxx/ActivityNet/val_npy
+  clip_stride: 20 # the number of clip is 100K
+  #clip_stride: -1  
+
+network:
+  net_name: mlp_net
+  eval_model: ./weights/ckpt_epoch_32.pth
+
+
+logging:
+  output_dir: ./output/mlp-anet-infer
