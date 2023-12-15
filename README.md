@@ -10,7 +10,7 @@
 - Download the video feature of ActivityNet validation set from https://pan.baidu.com/s/1CqYLlkA9mMNWSrsVhb4Jjg (pass code: r8vd) 
 - Download the weights folder from the same URL and put it into this repo (`./weights/ckpt_epoch_32.pth`)
 - The video feature of each video clip is extracted by BCN model (implemented by Caffe) with frame stride 8
-- For more details about BCN model, please refer https://github.com/FuchenUSTC/BCN
+- For more details about BCN model, please refer to https://github.com/FuchenUSTC/BCN
 - Please refer to `./dataset/anet/anet_val_npy.csv` for more details about the clip number and YouTube Video ID of each video
 - All the video number is `4,926` (5K), all the clip number is `2,066,253` (2M)
 
