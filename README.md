@@ -11,7 +11,7 @@
 - Download the weights folder from the same URL and put it into this repo (`./weights/ckpt_epoch_32.pth`)
 - The video feature of each video clip is extracted by BCN model (implemented by Caffe) with frame stride 8
 - For more details about BCN model, please refer https://github.com/FuchenUSTC/BCN
-- Please refer to `./dataset/anet/anet_val_npy.csv` for more details about the clip number of each video
+- Please refer to `./dataset/anet/anet_val_npy.csv` for more details about the clip number and YouTube Video ID of each video
 - All the video number is `4,926` (5K), all the clip number is `2,066,253` (2M)
 
 
@@ -29,9 +29,6 @@ If the environment and configuration have been set, please run
 bash run_eval.sh
 ```
 The Top-1, Top-3 and Top-5 classification accuracies are recorded on the log folder `./output/mlp-anet-infer`
-
-
-# Model and weights
 
 
 
